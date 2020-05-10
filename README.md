@@ -4,13 +4,14 @@
 What do I mean by 'cramming images into a corner'?
 
 original image:
+
 ![original image](https://github.com/benmuhlmann/mnist_corners/blob/master/markdown_figures/img_1_original.jpg)
 
 cornerized image:
-![cornerized image](https://github.com/benmuhlmann/mnist_corners/blob/master/markdown_figures/img_1_cornerized.jpg)
 
-How will the 'cornerized' zeros change learning?
+![cornerized image](https://github.com/benmuhlmann/mnist_corners/blob/master/markdown_figures/img_1_cornerized.jpg)
 
 As the proportion of cornerized zeros changes, how will the network change? 
 Changes I'm interested in: 
-..* Values of convolutional kernels
+- How will the convolutional kernels change?
+- How will accuracy and F1 score change?
