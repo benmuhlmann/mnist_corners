@@ -45,7 +45,7 @@ test_data_loader=data.DataLoader(test_data,
                                  shuffle=True, 
                                  num_workers=hyperparams['num_workers'])
 
-num_train=len(train_data)/
+num_train=len(train_data)
 num_test=len(test_data)
 
 num_train_batches=len(train_data_loader)

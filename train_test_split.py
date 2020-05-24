@@ -6,8 +6,17 @@ Created on Sun May 10 16:43:36 2020
 """
 
 import os
-import random 
-from shutil import copyfile
+import random
+
+from shutil import copyfile, rmtree
+
+def empty_train_test(folder_path):
+    if not os.path.isdir(folder_path):
+        print('invalid input path')
+        
+    rmtree(folder_path)
+    os.makedirs(folder_path)
+    
 
 def train_test_split(input_path,test_path,train_path,test_proportion=0.2):
     #begin error checking
