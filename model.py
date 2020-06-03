@@ -91,4 +91,5 @@ for epoch in range(hyperparams['epochs']):
 
     print( '  loss (train, test): {:.4f}, {:.4f}'.format(train_loss, test_loss))
     print( '  accuracy (train, test): {:.4f}, {:.4f}'.format(train_accuracy, test_accuracy))
-    
+
+    torch.save(my_model.state_dict(),'model_weights/model_weights.pt') 
